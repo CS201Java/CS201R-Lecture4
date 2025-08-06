@@ -23,16 +23,23 @@ public class Main {
         sumValues(20,37);
         sumValues(35,49);
 
+        //Checking some odd loops
         for (int i = 0, j = 0; i + j < 10; i++, j++) {
             System.out.println(i + " " + j + " = " + (i + j));
         }
+        System.out.println();
+        int j = 16;
+        for (;j > 0; j /= 2){
+            System.out.print(j + " ");
+        }
+        System.out.println();
 
         //using max function 
         //will determine which max function to use
-        System.out.println("\n\nThe maximum of 30 and 54 is: " + max(30,54));
-        System.out.println("The maximum of 3.0 and 5.4 is: " + max(3.0,5.4));
-        System.out.println("The maximum of 30 and 5.4 is: " + max(30,5.4));
-        System.out.println("The maximum of 30, 92 and 54 is: " + max(max(30,92),54));
+        System.out.println("\n\nThe maximum of 30 and 54 is: " + (max(30,54)));
+        System.out.println("The maximum of 3.0 and 5.4 is: " + (max(3.0,5.4)));
+        System.out.println("The maximum of 30 and 5.4 is: " + (max(30,5.4)));
+        System.out.println("The maximum of 30, 92 and 54 is: " + (max(max(30,92),54)));
 
         //pass by value
         int a = 10, b = 5;
