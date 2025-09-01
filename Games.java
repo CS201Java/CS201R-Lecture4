@@ -1,13 +1,12 @@
 import java.util.*;
 
-public class Craps {
+public class Games {
     private static final Random rand = new Random();
 
     private static int rollDice() {
-        int die1 = 1 + rand.nextInt(6);
-        int die2 = 1 + rand.nextInt(6);
-        System.out.println("You rolled: " + die1 + " + " + die2 + " + " + (die1+die2));
-        return die1 + die2;
+        //roll 2 die
+        //print & return result 
+        return 0;
     }
 
     public static void playCraps(Scanner scanner){
