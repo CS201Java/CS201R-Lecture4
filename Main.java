@@ -5,7 +5,11 @@ public class Main {
     public static void main (String[] args){
 
         //write a loop to sum the values from 1 to 10
-        System.out.println("\n\nSum from 1 to 10 is ");
+        int sum = 0;
+        for (int i = 1; i <=10; i++ ){
+            sum += i;
+        }
+        System.out.println("\n\nSum from 1 to 10 is " + sum);
 
         //write a loop to sum the values from 20 to 37 inclusive
 
@@ -15,7 +19,7 @@ public class Main {
         //Checking some odd loops
         System.out.println("\n\nOdd Loop #1");
 
-        for (int i = 0, j = 0; i + j < 10; i++, j++) {
+        for (int i = 0, j = 0; i + j < 10; ++i, ++j) {
             System.out.println(i + " " + j + " = " + (i + j));
         }
         System.out.println();
@@ -27,9 +31,13 @@ public class Main {
         }
         System.out.println();
 
-        //you do it #1
-        //playing craps  
+        //
+        //playing lotter             you do it #1 
         Scanner input = new Scanner(System.in);      
+        Games.playLottery(input);
+
+
+        //Play craps                you do it #2
         Games.playCraps(input);
 
 
@@ -46,11 +54,9 @@ public class Main {
         String[][] deck = new String[suits.length][cards.length];
 
         //write nested loop to print deck
-
-
-        //Pyramid (2-d)
-        //you do it #2
- 
+        
+        
+        //Draw the Pyramid (2-d)    you do it #3
         System.out.print("Please enter the number of rows: ");
         int row = input.nextInt();
         System.out.println();
