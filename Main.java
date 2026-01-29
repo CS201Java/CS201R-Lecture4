@@ -32,13 +32,17 @@ public class Main {
         System.out.println();
 
         //
-        //playing lotter             you do it #1 
+        //playing lottery            
         Scanner input = new Scanner(System.in);      
         Games.playLottery(input);
 
-
-        //Play craps                you do it #2
+        //Play craps                
         Games.playCraps(input);
+
+        //YOU DO IT
+        Convert.binToDec(input);
+        Convert.decToBin(input);
+
 
 
         //for each logic
